@@ -3,32 +3,50 @@
   background-color:lightgray;
 }*/
 
+.imgcontainer {
+  background-color: gray;
+}
+.container {
+  background-color: gray;
+}
+
 
 .artboard {
-  width: 940px;  
+  width: 960px;  
 }
 .module {
   border-top:1px solid gray;
+  margin:0px 8px 0px 8px;
 }
 #gn {
   display: grid;
   grid-template-columns: 300px 1fr;
-  margin-top:30px;
+  margin:30px 8px 0px 8px;
   padding:0;
 }
 #logo{
   width:72px;
   height: 27px;
-  background-color: black;
   display: inline-grid;
 }
 #findbtn{
   width:24px;
   height: 24px;
-  background-color: black;
   display: inline-grid;
-
 }
+#issueBox{
+  padding-right:160px;
+  margin: 0px 0px;
+}
+#issuPhoto{
+  width: 624px;
+  height: 313px;
+}
+#newsfeed{
+  width:100%;
+  height:452px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -39,7 +57,7 @@ li {
     display: inline;
 }
 .sign {
-  margin-top: 38px;
+  margin: 38px 8px 0px 8px;
 }
 h1 {
   font-size:50px;
@@ -51,14 +69,18 @@ h1 {
   font-weight: 100;
   display: block;
 }
+h2 {
+  margin-top:0px;
+  margin-bottom:0px;
+}
 h5 {
   margin-top:0px;
   padding-top:8px;
 }
 .toprow{
   display: grid;
-  grid-template-columns: 2fr 16px 1fr;
-  margin-top: 38px;
+  grid-template-columns: 2fr 1fr;
+  margin: 56px 0px 0px 0px;
 }
 /*
     a {
