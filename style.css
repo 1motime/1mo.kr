@@ -7,7 +7,9 @@
 .artboard {
   width: 940px;  
 }
-
+.module {
+  border-top:1px solid gray;
+}
 #gn {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -51,7 +53,7 @@ h1 {
 }
 .toprow{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 16px 1fr;
   margin-top: 38px;
 }
 /*
