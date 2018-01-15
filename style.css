@@ -1,29 +1,89 @@
-/*div{
-  border:2px solid gray;
+/*
+
+div{
+  border:1px solid tomato;
   background-color:lightgray;
 }*/
 
-.imgcontainer {
-  background-color: gray;
+
+a:link{
+  color:black;
 }
-.container {
-  background-color: gray;
+a:visited{
+  color:black;
 }
+a:hover{
+  font-weight: 500;
+  /*border-bottom: 1px solid gray;*/
+}
+/*a:active{
+  color:green;
+}*/
+/*a:focus{
+  color:white;
+}*/
+a { text-decoration:none }
 
 
+
+*{
+  box-sizing:border-box;
+}
+body {
+  background-color: #F8F8F8;  
+}
+.imgcontainer,.container  {
+  background-color: gray;
+}
 .artboard {
   width: 960px;  
+  margin: 0 auto;
 }
 .module {
   border-top:1px solid gray;
+  padding-top:8px;
   margin:0px 8px 0px 8px;
 }
-#gn {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  margin:30px 8px 0px 8px;
-  padding:0;
+#homeBtn {
+  border-bottom: 1px solid black;
 }
+#navigationContainer {
+  /*background-color: powderblue;*/
+  display: flex;
+  flex-direction: row;
+  margin:50px 8px 38px 8px;
+  font-size:14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: black;
+
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+#naviLeft {
+  flex-grow: 1;
+  padding-right:160px;
+}
+#naviRight {
+  flex-grow: 2;
+  padding-left: 16px;
+}
+#naviLeft .navielement {
+  height: 27px;
+  padding: 0px 0px 0px 0px;
+}
+#naviRight .navielement {
+  /*background-color: black;*/
+  height: 27px;
+  padding: 0px 0px 0px 0px;
+  /*border-bottom: 1px solid gray;*/
+  /*flex-grow: 1;*/
+}
+
 #logo{
   width:72px;
   height: 27px;
@@ -44,7 +104,7 @@
 }
 #newsfeed{
   width:100%;
-  height:452px;
+  height:456px;
 }
 
 ul {
@@ -56,31 +116,54 @@ ul {
 li {
     display: inline;
 }
-.sign {
-  margin: 38px 8px 0px 8px;
+#variableMessageSign {
+  margin: 0px 8px 0px 8px;
+  padding-bottom:56px;
+
 }
 h1 {
   font-size:50px;
   text-align: left;
-  border-top:1px solid gray;
-  margin-top:0px;
-  padding-top: 11px;
+  margin:0px;
+  padding: 0px;
   font-family: 'Roboto Slab', serif;
   font-weight: 100;
   display: block;
 }
 h2 {
-  margin-top:0px;
-  margin-bottom:0px;
+  font-size:24px;
+  text-align: left;
+  margin:0px;
+  padding:0px 0px 9px 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  display: block;
 }
 h5 {
-  margin-top:0px;
-  padding-top:8px;
+  font-size:14px;
+  text-align: left;
+  margin:0px;
+  padding:0px 0px 30px 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  display: block;
 }
-.toprow{
+p {
+  font-size:15px;
+  text-align: left;
+  margin:0px;
+  padding:0px 0px 22px 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  display: block;
+}
+.row{
+  margin: 0px 0px 0px 0px;
+  padding-bottom:70px;
+}
+#toprow{
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 56px 0px 0px 0px;
 }
 /*
     a {
