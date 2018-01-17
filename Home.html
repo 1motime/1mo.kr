@@ -4,6 +4,7 @@
 <head>
   <title>1mo.kr</title>
   <meta charset="utf-8">
+  <!-- <meta name="viewport" content+"width=divice-width", initial-scale=1.0"> -->
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -16,45 +17,65 @@
     <div id="navigationContainer">
       <div id="naviLeft">
         <ul class="navigation">
-          <li><a href="Home.html"><div id="logo" class="navielement" class="imgcontainer"><img src="img/logo.png"></div></a></li>
-          <li><a href="Home.html"><div class="navielement">KOR</div></a></li>
-          <li><a href="Home.html"><div class="navielement">ENG</div></a></li>
+          <li><a href="#"><div id="logo" class="navielement" class="imgcontainer"><img src="img/logo.png"></div></a></li>
+          <li><a href="#"><div class="navielement">KOR</div></a></li>
+          <li><a href="#"><div class="navielement">ENG</div></a></li>
         </ul>
       </div>
       <div id="naviRight">
         <ul class="navigation">
-          <li><a href="Home.html"><div class="navielement" id="homeBtn">HOME</div></a></li>
-          <li><a href="Home.html"><div class="navielement">ABOUT</div></a></li>
-          <li><a href="Home.html"><div class="navielement">WORKS</div></a></li>
-          <li><a href="Home.html"><div class="navielement">NEWS</div></a></li>
-          <li><a href="Home.html"><div class="navielement">ESSAY</div></a></li>
-          <li><a href="Home.html"><div class="navielement"><div id="findbtn" class="imgcontainer"></div></div></a></li>
+          <li><a href="#"><div class="navielement" id="homeBtn">HOME</div></a></li>
+          <li><a href="#"><div class="navielement">ABOUT</div></a></li>
+          <li><a href="#"><div class="navielement">PORTFOLIO</div></a></li>
+          <li><a href="#"><div class="navielement">NEWS</div></a></li>
+          <li><a href="#"><div class="navielement">ESSAY</div></a></li>
+          <li><a href="#"><div id="findbtn" class="imgcontainer"></div></a></li>
         </ul>
       </div>
     </div>
 
-    <div class="module" id="variableMessageSign">
+    <div class="TopLineBox" id="variableMessageSign">
       <h1>
-        <div>I am interested in <br>'design', 'media' and 'technology'.</div>
+        <div>I am interested in <br>‘design’, ‘media’ and ‘technology’.</div>
       </h1>
     </div>
 
-    <div class="row" id="toprow">
-      <div class="module">
+    <div id="FirstRow">
+      <div id="MostInterestingThingContainer" class="TopLineBox">
         <h5>MOST INTERSTING THING</h5>
         <h2>Issue Title</h2>
-        <div id="issueBox">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
+        <div id="issueTextBox">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div id="issuPhoto" class="imgcontainer"></div>
+        <div id="issuPhotoContainer" class="imgcontainer"></div>
       </div>
 
-      <div class="module" class="imgcontainer">
+      <div class="TopLineBox" id="NewsContainer">
         <h5>NEWS</h5>
-        <div id="newsfeed" class="container"></div>
+        <div id="newsfeedContainer" class="container"></div>
       </div>
     </div>  
 
+    <div id="SecondRow">
+  		<div id="RecentWorksContainer" class="TopLineBox">
+      	<h5>RECENT WORKS</h5>
+
+  <!--       <div id="recentWorksModuleContainer">
+          
+        </div> -->
+  		</div>
+      <div class="worksContainer">
+        <div id="recentWorksMainContainer">
+          <div class="imgcontainer" id="mainWorksImg"></div>
+          <h4>Works Title</h4>
+          <div class="TextBoxBody"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+        </div>
+        <div class="recentWorkModule"><div class="recentWorksImg"></div></div>
+        <div class="recentWorkModule"><div class="recentWorksImg"></div></div>
+        <div class="recentWorkModule"><div class="recentWorksImg"></div></div>
+        <div class="recentWorkModule"><div class="recentWorksImg"></div></div>
+      </div>
+    </div>
   </div>
 
 </body>
