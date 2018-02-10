@@ -155,7 +155,7 @@ li {
       margin:0px 160px 18px 0px;
       height: 84px;
     }
-    #issuPhotoContainer{
+    #issuePhotoContainer{
       height: 313px;
     }
   #NewsContainer{
@@ -167,7 +167,7 @@ li {
     
   
 
-#SecondRow{
+#SecondRow, #ThirdRow, #FourthRow, #Footer{
   margin:0px 8px;
   padding-bottom:70px;
 }
@@ -198,8 +198,56 @@ li {
           height: 100px;
           margin-bottom: 12px;
         }
+/*#ThirdRow{
+  margin:0px 8px;
+  padding-bottom:70px;
+}*/
+#FourthRow{
+  margin:0px 8px;
+  padding-bottom:70px;
+}
+.EssayTextBox{
+  height:109px;
+  overflow: hidden;
+}
+#InterestsContainer{
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 21px;
+  height: auto;
+}
+.InterestsModule{
+  position: relative; 
+  padding-top: 100%; /* 1:1 ratio */ 
+  overflow: hidden;
+}
+.InterestsImg{
+  position: absolute; 
+  align-items: center;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+-webkit-transform: translate(50%,50%); 
+-ms-transform: translate(50%,50%); 
+transform: translate(50%,50%);
 
-
+}
+#FooterText{
+  display: inline-block;
+  font-size:12px;
+  line-height: 18px;
+  color: #444444;
+}
+.snsThumb{
+  float: right;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 4px 0px 0px 16px;
+}
 
 @media (max-width:960px){
   .artboard{
