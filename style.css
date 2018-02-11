@@ -101,6 +101,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
+    .translation{
+      font-size: 12px;
+      margin:0 4px;
+    }
     #naviLeft {
       display:flex;
       flex-direction: row-reverse;
