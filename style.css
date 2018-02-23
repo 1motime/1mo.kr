@@ -444,9 +444,10 @@
   .SubContentsText{
     /*padding-top: 12px;*/
     font-size:11.5px;
-    line-height: 19px;
+    line-height: 18px;
     font-weight: 00;
     font-family: 'roboto','Noto Sans KR', sans-serif;
+    padding-bottom:8px;
     color: #A8A8A8;
   }
   .WorksSubTitle{
@@ -610,10 +611,10 @@
         grid-column: 1/13;
       }
       .ContentsImgB-1Wrapper{
-        grid-column: 1/6;    
+        grid-column: 1/7;    
       }
       .ContentsImgB-2Wrapper{
-        grid-column: 6/13;
+        grid-column: 7/13;
       }      
   @media (max-width:500px){
       #ExperienceContainer{
