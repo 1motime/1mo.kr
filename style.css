@@ -1,4 +1,4 @@
-/*div{
+/*diㄴ{
   border:1px solid tomato;
 }*/
 /*TYPOGRAPHY*/
@@ -26,7 +26,7 @@
     text-align: left;
     margin:0px;
     line-height:48px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     font-weight: 100;
   }
   h4 {
@@ -81,6 +81,9 @@
     padding: 0px;
     font-family: 'Roboto Slab', serif;
     font-weight: 100;
+  }
+  .ManifestoBold{
+    font-weight: 300;
   }
   .NewsTimeText{
     font-size:12px;
@@ -267,6 +270,9 @@
     margin:0px 8px;
     padding-bottom:70px;
   }
+  .EssayContainerSeperateLine{
+    display:none;
+  }
   .EssayTextBox{
     height:63px;
     overflow: hidden;
@@ -338,7 +344,7 @@
   #ExperienceContainer{
     display: grid;
     justify-content: space-between;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 5fr 160px;
     grid-column-gap: 16px;
     grid-row-gap: 6px;
     height: auto;
@@ -354,12 +360,20 @@
   #ConcernContainer{
     display: grid;
     justify-content: space-between;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 16px;
     height: auto;
   }
   .ConcernText{
+    border-left:1px solid #E1E1E1;
+    padding-left:16px;
     line-height: 31px;
+
+    color: #444444;
+    font-size:15px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;    
   }
   .ConcernModule{
     padding:0;
@@ -401,7 +415,7 @@
   }
   .PortfolioImgModule{
     position: relative; 
-    padding-top: 100%; /* 1:1 ratio */ 
+    padding-top: 56.25%; /* 1:1 ratio */ 
     overflow: hidden; 
     margin-bottom: 12px;
   }
@@ -466,7 +480,7 @@
 
   }
   .MainContentsContainer{
-    grid-column:1/9;
+    grid-column:1/8;
   }
   .SubContentsContainer{
     grid-column:10/13;
@@ -491,11 +505,13 @@
     position: relative; 
     /*overflow: hidden;*/
     height:auto;
+    margin:0px;
+    padding:0px;
 
   }
   .FullContentsImg{
     width: 100%;
-    margin-bottom:32px;
+    /*margin-bottom:32px;*/
     /*height: auto;*/
   }
   .ContentsImgFullWrapper{
@@ -503,24 +519,34 @@
 
   }
   .ContentsImgAWrapper{
+    /*8-columns*/
     grid-column: 1/9;
   }
   .ContentsImgB-1Wrapper{
+    /*4-columns 1row*/
     grid-column: 1/5;    
   }
   .ContentsImgB-2Wrapper{
+    /*4-columns 2row*/
     grid-column: 5/9;
   }
   .ContentsImgA{
+    /* 16:9 ratio */ 
     position: relative; 
-    padding-top: 56.25%; /* 16:9 ratio */ 
+    padding-top: 56.25%;
     overflow: hidden;
   }
   .ContentsImgB{
+    /* 4:3 ratio */ 
     position: relative; 
-    padding-top: 75%; /* 4:3 ratio */ 
+    padding-top: 75%;
     overflow: hidden;
-
+  }
+  .ContentsImgC{
+    /* 1:1 ratio */ 
+    position: relative; 
+    padding-top: 100%;
+    overflow: hidden;
   }
   .ContentsImgCentered{
     position: absolute; 
@@ -532,17 +558,27 @@
     -ms-transform: translate(50%,50%); 
     transform: translate(50%,50%);
   }
-  .ContentsImg{
+  .ContentsImgLandscape{
     position: absolute; 
     top: 0; 
     left: 0; 
-    max-width: 100%; 
+    max-height: 100%; 
     height: auto; 
     -webkit-transform: translate(-50%,-50%); 
     -ms-transform: translate(-50%,-50%); 
     transform: translate(-50%,-50%);
   }
-  ContentsImg .
+  .ContentsImgPortrait{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    max-height: 100%; 
+    height: auto; 
+    -webkit-transform: translate(-50%,-50%); 
+    -ms-transform: translate(-50%,-50%); 
+    transform: translate(-50%,-50%);
+  }
+
 
 /*RESPONSIVE*/
   #menubtn{
@@ -593,10 +629,16 @@
       h1{
         font-size: 40px;
       }
+      #ExperienceContainer{
+        grid-template-columns: 1fr 80px;
+      }
+      #ConcernContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+      }      
   }
   @media (max-width:650px){
       h1{
-        font-size: 28px;
+        font-size: 32px;
       }
       h2{
         font-size: 20px;
@@ -608,7 +650,12 @@
         grid-column: 1 / 2;
       }
       .worksContainer{
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
+      }
+      .EssayContainerSeperateLine{
+        display:block;
+        border-top:1px solid #E1E1E1;
+
       }
       #issueTextBox{
         margin:0px 0px 18px 0px;
@@ -627,10 +674,45 @@
       }
       .ContentsImgB-2Wrapper{
         grid-column: 7/13;
+      }
+      .ContentsImgFullWrapper{
+        margin:0px -16px;
+      }
+      .PortfolioMainImgWrapper{
+        margin:0px -16px;
+      }
+      .ContentsImgAWrapper{
+        margin:0px -16px;
       }      
-  @media (max-width:500px){
-      #ExperienceContainer{
-        grid-template-columns: 1fr 64px;
+      .ContentsImgB-1Wrapper{
+        margin:0px 0px 0px -16px;
+      }
+      .ContentsImgB-2Wrapper{
+        margin:0px -16px 0px 0px;
+      }
+      #ConcernContainer{
+        grid-template-columns: 1fr 1fr;
+      }
+      #MessageRow{
+        grid-template-columns: 1fr;
+      }
+      .MessageRowText{
+        margin-bottom: 24px;
+      }
+      #InterestsContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+      }      
+
+  @media (max-width:415px){
+      h1{
+        font-size: 22px;
+        font-weight: 300;
+        letter-spacing:-0.5px;
+        margin-bottom:8px;
+      }
+      h2{
+        font-size:20px;
+        padding-bottom:8px;
       }
       h3 {
         font-size:40px;
@@ -639,10 +721,42 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 100;
       }
+      h5{
+        font-size:12px;
+      }
+      .ManifestoText{
+        font-size:18px;
+        line-height:28px;
+        font-weight: 300;
+        margin-bottom: 14px;
+      }
+      .ManifestoBold{
+        font-weight:500;
+      }
       .WorksTitle{
         grid-column:1/13;
         padding-bottom:0px;
       }      
+      #ConcernContainer{
+        grid-template-columns: 1fr 1fr;
+      }
+      #InterestsContainer{
+        grid-template-columns: 1fr 1fr;
+      }
+      .ConcernText{
+        font-size:12px;
+        line-height:20px;
+        padding-left:8px;
+      }
+      #PortfolioContainer{
+        grid-template-columns: 1fr;
+      }
+      #MainPortfolio{
+        grid-column: 1 / 2;
+      }
+      .PortfolioMainImgContainer{
+        padding-top: 100%;
+      }
   }
 
 
