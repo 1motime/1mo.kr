@@ -703,7 +703,10 @@
         grid-template-columns: 1fr 1fr 1fr;
       }      
 
-  @media (max-width:415px){
+  @media (min-width:320px) and (max-width:415px){
+      .artboard{
+        width: 100%;
+      }
       h1{
         font-size: 22px;
         font-weight: 300;
