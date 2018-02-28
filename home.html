@@ -2,78 +2,59 @@
 <html>
 
 <head>
-  <title>1mo.kr_BETA</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css"> -->
-  <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css"> -->
+	<title>1mo.kr_BETA</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 
+
+
 <body>
-<script type="text/javascript">
-	jQuery(function($){
-    	$( '.menu-btn' ).click(function(){
-    		$('.responsive-menu').addClass('expand')
-    		$('.menu-btn').addClass('btn-none')
-    	})
-    	
-    	 $( '.close-btn' ).click(function(){
-    		$('.responsive-menu').removeClass('expand')
-    		$('.menu-btn').removeClass('btn-none')
-    	})
-  	})
-</script>
-<script type="text/javascript">
-	jQuery(function($){
-    	     $( '.menu-btn' ).click(function(){
-    	     $('.responsive-menu').toggleClass('expand')
-    	     })
-        })
-</script>
-<div class="mobile-nav">
-     <div class="menu-btn" id="menu-btn">
-		<div></div>
-			<span></span>
-			<span></span>
-			<span></span>
-     </div>
-     <div class="responsive-menu">
-        <ul>
-           <li>1. Object</li>
-           <li>2. Object</li>
-        </ul>
-     </div>
-</div>
-
 	<div class="artboard">
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#navBtnContainer ul.sub").hide();
+				$("#navBtnContainer ul.menu li").click(function(){
+					$("ul",this).slideToggle("fast");
+				});
+			});
+		</script>
   		<!-- NAVIGATION -->
-		    <div id="navigationContainer">
-		      <div id="logo" class="navielement"><a href="home.html"><img src="img/logo.png"></a></div>
-		      <div id="naviLeft">
-		      	<!-- TRANSLATION -->
-		        <!-- <ul class="navigation">
-		        
-		          <li><a href="#"><div class="navielement translation">KOR</div></a></li>
-		          <li><a href="#"><div class="navielement translation">ENG</div></a></li>
-
-		        </ul> -->
-		      </div>
-		      <div id="naviRight">
-		        <ul class="navigation">
-		          <li><a href="home.html"><div class="navielement SelectedMenu">HOME</div></a></li>
-		          <li><a href="about.html"><div class="navielement">ABOUT</div></a></li>
-		          <li><a href="portfolio.html"><div class="navielement">PORTFOLIO</div></a></li>
-		          <li><a href="#"><div class="navielement">NEWS</div></a></li>
-		          <li><a href="#"><div class="navielement">ESSAY</div></a></li>
-		          <li><a href="#"><div id="findbtn" class="imgcontainer"></div></a></li>
-		        </ul>
-		      </div>
-		      <div id="menubtn"><a href="#"><img src="img/menu.png"></a></div>
-		    </div>
+			<div id="navigationContainer">
+				<div class="logoWrapper">
+					<a href="home.html">
+						<div id="logoContainer" class="navielement">
+							<img src="img/1MO_logo.svg" id="logo">
+						</div>
+					</a>
+				</div>
+			  	<div id="naviRight">
+			        <ul class="navigation">
+			          <li><a href="home.html"><div class="navielement SelectedMenu">HOME</div></a></li>
+			          <li><a href="about.html"><div class="navielement">ABOUT</div></a></li>
+			          <li><a href="portfolio.html"><div class="navielement">PORTFOLIO</div></a></li>
+			          <li><a href="#"><div class="navielement">NEWS</div></a></li>
+			          <li><a href="#"><div class="navielement">ESSAY</div></a></li>
+			        </ul>
+			  	</div>
+			</div>
+			<div id="navBtnContainer">
+				<ul class="menu">
+					<li><a href="#"><img src="img/menu.png" id="menuBtn"></a>
+						<ul class="sub">
+							<li><a href="home.html"><div class="navielement">HOME</div></a></li>
+							<li><a href="about.html"><div class="navielement">ABOUT</div></a></li>
+							<li><a href="portfolio.html"><div class="navielement">PORTFOLIO</div></a></li>
+							<li><a href="about.html"><div class="navielement">NEWS</div></a></li>
+							<li><a href="about.html"><div class="navielement">ESSAY</div></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 		<!-- TOP & FIRST ROW-->
 		    <div class="TopLineBox" id="variableMessageSign">
 		      <h1>

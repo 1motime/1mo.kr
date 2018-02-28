@@ -8,33 +8,51 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>  
 </head>
 
 <body>
   <div class="artboard">
-  	<!-- NAVIGATION -->
-	    <div id="navigationContainer">
-	      <div id="logo" class="navielement"><a href="#"><img src="img/logo.png"></a></div>
-	      <div id="naviLeft">
-	      	<!-- TRANSLATION -->
-	        <!-- <ul class="navigation">
-	          <li><a href="#"><div class="navielement translation">KOR</div></a></li>
-	          <li><a href="#"><div class="navielement translation">ENG</div></a></li>
-	        </ul> -->
-	      </div>
-	      <div id="naviRight">
-	        <ul class="navigation">
-
-	          <li><a href="home.html"><div class="navielement">HOME</div></a></li>
-	          <li><a href="about.html"><div class="navielement SelectedMenu">ABOUT</div></a></li>
-	          <li><a href="portfolio.html"><div class="navielement">PORTFOLIO</div></a></li>
-	          <li><a href="#"><div class="navielement">NEWS</div></a></li>
-	          <li><a href="#"><div class="navielement">ESSAY</div></a></li>
-	          <li><a href="#"><div id="findbtn" class="imgcontainer"></div></a></li>
-	        </ul>
-	      </div>
-	      <div id="menubtn"><a href="#"><img src="img/menu.png"></a></div>
-	    </div>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#navBtnContainer ul.sub").hide();
+        $("#navBtnContainer ul.menu li").click(function(){
+          $("ul",this).slideToggle("fast");
+        });
+      });
+    </script>
+    <!-- NAVIGATION -->
+      <div id="navigationContainer">
+        <div class="logoWrapper">
+          <a href="home.html">
+            <div id="logoContainer" class="navielement">
+              <img src="img/1MO_logo.svg" id="logo">
+            </div>
+          </a>
+        </div>
+          <div id="naviRight">
+              <ul class="navigation">
+                <li><a href="home.html"><div class="navielement">HOME</div></a></li>
+                <li><a href="about.html"><div class="navielement SelectedMenu">ABOUT</div></a></li>
+                <li><a href="portfolio.html"><div class="navielement">PORTFOLIO</div></a></li>
+                <li><a href="#"><div class="navielement">NEWS</div></a></li>
+                <li><a href="#"><div class="navielement">ESSAY</div></a></li>
+              </ul>
+          </div>
+      </div>
+    <div id="navBtnContainer">
+      <ul class="menu">
+        <li><a href="#"><img src="img/menu.png" id="menuBtn"></a>
+          <ul class="sub">
+            <li><a href="home.html"><div class="navielement">HOME</div></a></li>
+            <li><a href="about.html"><div class="navielement">ABOUT</div></a></li>
+            <li><a href="portfolio.html"><div class="navielement">PORTFOLIO</div></a></li>
+            <li><a href="about.html"><div class="navielement">NEWS</div></a></li>
+            <li><a href="about.html"><div class="navielement">ESSAY</div></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
     <!-- IMG & FIRST ROW -->
       <!-- <div id="AboutImgContainer" class=imgcontainer><img class="AboutImg" src=""></div> -->
       <div id="MessageRow">
@@ -66,16 +84,16 @@
 	  </div>
       <div id="AboutFirstRow" class="TopLineBox">
         <h5>DESIGN MANIFESTO</h5>
-          <p class="ManifestoText">A solid <span class="ManifestoBold"><u>foundation</u></span> is needed to make good results.</p>
-          <p class="ManifestoText"><span class="ManifestoBold"><u>Clear</u></span> designs should be <span class="ManifestoBold"><u>functional</u></span> and free of superfluities.</p>
-          <p class="ManifestoText"><span class="ManifestoBold"><u>Craftsmanship</u></span> turns design into art.</p>
-          <p class="ManifestoText">Even small graphical elements should be <span class="ManifestoBold"><u>relevant</u></span> to the overall context.</p>
-          <p class="ManifestoText"><span class="ManifestoBold"><u>Creative</u></span> work comes from an effort to devote time and attention.</p>
-          <p class="ManifestoText">A solid <span class="ManifestoBold"><u>structure</u></span> and <span class="ManifestoBold"><u>system</u></span> makes the target constantly good.</p>
-          <p class="ManifestoText"><span class="ManifestoBold"><u>Sustainability</u></span> is the duty of the creator.</p>
-          <p class="ManifestoText">Co-workers should share a <span class="ManifestoBold"><u>vision</u></span>, communicate, and have shared goals.</p>
-          <p class="ManifestoText">Technology and design should be used for <span class="ManifestoBold"><u>people</u></span>.</p>
-          <p class="ManifestoText">We need to have a <span class="ManifestoBold"><u>authentic</u></span> design that addresses the essence.</p>
+          <p class="ManifestoText">"A solid <span class="ManifestoBold"><u>foundation</u></span> is needed to make good results."</p>
+          <p class="ManifestoText">"<span class="ManifestoBold"><u>Clear</u></span> designs should be <span class="ManifestoBold"><u>functional</u></span> and free of superfluities."</p>
+          <p class="ManifestoText">"<span class="ManifestoBold"><u>Craftsmanship</u></span> turns design into art."</p>
+          <p class="ManifestoText">"Even small graphical elements should be <span class="ManifestoBold"><u>relevant</u></span> to the overall context."</p>
+          <p class="ManifestoText">"<span class="ManifestoBold"><u>Creative</u></span> work comes from an effort to devote time and attention."</p>
+          <p class="ManifestoText">"A solid <span class="ManifestoBold"><u>structure</u></span> and <span class="ManifestoBold"><u>system</u></span> makes the target constantly good."</p>
+          <p class="ManifestoText">"<span class="ManifestoBold"><u>Sustainability</u></span> is the duty of the creator."</p>
+          <p class="ManifestoText">"Co-workers should share a <span class="ManifestoBold"><u>vision</u></span>, communicate, and have shared goals."</p>
+          <p class="ManifestoText">"Technology and design should be used for <span class="ManifestoBold"><u>people</u></span>."</p>
+          <p class="ManifestoText">"We need to have a <span class="ManifestoBold"><u>authentic</u></span> design that addresses the essence."</p>
       </div>
     <!-- SECOND ROW -->
       <div id="AboutSecondRow" class="TopLineBox">
