@@ -5,14 +5,24 @@
 /*NAV*/
     #navBtnContainer{
       display:none;
-      width:100%;
-      margin:0 8px 30px 8px;
+      margin: 0px 8px 0px 8px;
+      padding-bottom:24px;
+      font-size:16px;
+      font-family: 'Roboto', sans-serif;
+      font-weight:300;       
     }
-    .menu{
+    .MobieNavSelect{
+      text-decoration: none;
+      border-bottom: 1px solid black;
+    }
+/*    .menu{
       position:static;
-    }
+    }*/
     .sub{
-      line-height: 80px;
+      line-height: 48px;
+    }
+    .navielementMobile{
+      width:200px;
     }
 /*TYPOGRAPHY*/
   h1 {
@@ -134,7 +144,7 @@
       font-weight: 400;
     }  
 /*NAVIGATION*/
-  #navigationContainer {
+  #navigationContainer{
     display: flex;
     flex-direction: row;
     margin:50px 8px 38px 8px;
@@ -159,7 +169,7 @@
     position:absolute;
     z-index: 999;
     right:16px;
-    top:48px;
+    top:32px;
     /*float:right;*/
   }  
 
@@ -182,19 +192,10 @@
     width:544px;
     padding-left: 16px;
   }
-  #naviRight .navielement {
+  .navielement {
     height: 27px;
     padding: 0px 2px;
   }
-
-  
-
-
-
-  
-  
-
-
 /*COMMON*/
   u { 
     text-decoration: none;
@@ -232,6 +233,9 @@
   }
   .SelectedMenu{
     border-bottom: 1px solid black;
+  }
+  .SelectedMenuMobile{
+    font-weight:500;
   }
 
 /*HOME*/
@@ -672,7 +676,7 @@
   }
   @media (max-width:650px){
       #navBtnContainer{
-        display:block;
+        display:block;     
       }    
       #naviRight {
         display: none;
@@ -744,7 +748,9 @@
       }      
 
   @media (max-width:415px){
-
+      #navigationContainer{
+        margin:32px 8px 24px 8px;
+      }
       .artboard{
         width: 100%;
       }
