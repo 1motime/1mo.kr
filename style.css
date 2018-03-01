@@ -22,7 +22,7 @@
       line-height: 48px;
     }
     .navielementMobile{
-      width:200px;
+      /*width:200px;*/
     }
 /*TYPOGRAPHY*/
   h1 {
@@ -748,12 +748,23 @@
       }      
 
   @media (max-width:415px){
+
       #navigationContainer{
         margin:32px 8px 24px 8px;
+      }
+      #logo{
+        margin-left:-4px;
       }
       .artboard{
         width: 100%;
       }
+      #FooterText{
+        display: block;
+      }
+      .snsThumb{
+        float: left;
+        margin: 24px 16px 0px 0px;
+      }      
       h1{
         font-size: 22px;
         font-weight: 300;
