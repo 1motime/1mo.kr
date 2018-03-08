@@ -65,12 +65,15 @@
     font-size:14px;
     display:block;
     text-align: left;
-    letter-spacing: 0px;
-    font-family: 'Roboto', sans-serif;
+    /*letter-spacing: 0px;*/
+    font-family: 'Roboto', 'Noto Sans KR' sans-serif;
     font-weight: 500;
     margin:0px;
     padding:0px 0px 30px 0px;
     color: #767676;
+  }
+  .MainContentsContainer>h5{
+    padding:48px 0px 0px 0px;
   }
   p {
     color: #444444;
@@ -79,7 +82,7 @@
     line-height: 21px;
     margin:0px;
     padding:0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'roboto', sans-serif;
     font-weight: 300;
     word-break: keep-all;
   }
@@ -88,13 +91,36 @@
     font-size:14px;
     text-align: left;
     line-height: 21px;
+    font-family: 'roboto', 'Noto Sans KR', sans-serif;
     margin:0px;
     padding:0;
-    letter-spacing:-0.5px;
-    font-family: 'Roboto', 'Noto Sans KR' sans-serif;
+    letter-spacing:-0.4px;
+    word-spacing:0.4px;
     font-weight: 300;
     word-break: keep-all;
   }
+  .korean:lang(ko){
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+
+  }
+/*  .MainContentsText{
+    padding:56px 0px 34px 0px;
+    line-height: 24px;
+    font-family: 'roboto', 'Noto Sans KR', sans-serif;
+    font-weight:300;
+  }*/
+
+  .MainContentsText:lang(ko){
+    padding:12px 0px 34px 0px;
+    font-size: 13.5px;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    word-spacing:0.4px;
+    /*font-family: 'roboto', 'Noto Sans KR', sans-serif;*/
+    font-weight:300;
+  }
+
   .ManifestoText{
     font-size:22px;
     text-align: left;
@@ -126,22 +152,25 @@
   }
   /*Portfolio Typography*/
     .InformationText{
-      list-style-type: disc;
+      list-style-type: none;
       font-size:12px;
       line-height: 21px;
       font-weight: 400;
-      margin-top:8px;
-      margin-left:14px;
-      margin-bottom:24px;
+      /*margin-top:8px;*/
+      /*margin-left:14px;*/
+      margin-bottom:16px;
       color: #404040;
       font-weight:700;
     }
     .InformationTextDetails{
       line-height:16px;
-      list-style-type: circle;
+      margin-bottom:4px;
+      list-style-type: none;
       margin-left:16px;
       left:-10px;
       font-weight: 400;
+      word-break:break-all;
+
     }  
 /*NAVIGATION*/
   #navigationContainer{
@@ -482,6 +511,7 @@
 
   }
 /*PORTFOLIO WORKS*/
+
   .PortfolioMainImgWrapper{
     grid-column: 1/13;
   }
@@ -521,32 +551,16 @@
   .WorksSubTitle{
     grid-column:1/13;
     font-family: 'roboto','Noto Sans KR', sans-serif;
+    font-size:14px;
+    /*letter-spacing: -0.8px;*/
     padding-top:16px;
     padding-bottom:16px;
-    /*padding-bottom:55px;*/
-    /*letter-spacing: .3px;*/
-
   }
   .MainContentsContainer{
     grid-column:1/8;
   }
   .SubContentsContainer{
     grid-column:10/13;
-  }
-  .MainContentsText{
-    padding:56px 0px 34px 0px;
-    line-height: 24px;
-    font-family: 'roboto', 'Noto Sans KR', sans-serif;
-    font-weight:300;
-  }
-  .MainContentsText:lang(ko){
-    padding:80px 0px 34px 0px;
-    font-size: 13.5px;
-    line-height: 24px;
-    letter-spacing: -0.8px;
-    word-spacing:0.8px;
-    font-family: 'roboto', 'Noto Sans KR', sans-serif;
-    font-weight:300;
   }
 
   .ContentsImgFull{
@@ -620,7 +634,7 @@
     position: absolute; 
     top: 0; 
     left: 0; 
-    max-height: 100%; 
+    max-width: 100%; 
     height: auto; 
     -webkit-transform: translate(-50%,-50%); 
     -ms-transform: translate(-50%,-50%); 
@@ -777,10 +791,15 @@
       }
       h3 {
         font-size:40px;
-
         line-height:40px;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Slab', sans-serif;
         font-weight: 100;
+      }
+      .WorksSubTitle{
+        font-size:14px;
+        /*letter-spacing: -0.8px;*/
+        padding-top:8px;
+        padding-bottom:24px;
       }
       h5{
         font-size:12px;
@@ -816,7 +835,7 @@
         grid-column: 1 / 2;
       }
       .PortfolioMainImgContainer{
-        padding-top: 100%;
+        padding-top: 56.25%;
       }
   }
 
