@@ -11,6 +11,9 @@
   <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="script.js"></script>
+  <!-- <script src="jquery.loupe.min.js"></script> -->
+  <script src="jquery.imagezoom.js"></script>
+
 </head>
 
 <body>
@@ -140,8 +143,11 @@
 	          	</p>
     		</div>		
         <div class="ContentsImgFullWrapper">
-            <div class="ContentsImgFull imgcontainer">
-                    <img src="img/sejongbuilding/finaloutput.png" class="FullContentsImg">
+            <div class="ContentsImgFull imgcontainer zoom" data-zoom="large.jpg">
+                    <img id="demo-2" src="img/sejongbuilding/finaloutput.png" class="FullContentsImg">
+                    <script type="text/javascript">$('.zoom').zoom();</script>
+
+                    <!-- <script type="text/javascript">$('#demo-2').loupe();</script> -->
             </div>
         </div>
         <div class="ContentsImgB-1Wrapper">
