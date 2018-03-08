@@ -841,6 +841,9 @@
       .PortfolioMainImgContainer{
         padding-top: 56.25%;
       }
+  .ContentsImgB-3Wrapper{
+    display: none;
+  }
   }
 
 
