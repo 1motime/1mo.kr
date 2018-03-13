@@ -11,6 +11,9 @@
 	<link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="script.js"></script>
+	<script src="sb-instagram.js"></script>
+	<link rel="stylesheet" href="sb-instagram.css">
+
 </head>
 
 <body>
@@ -92,44 +95,45 @@
 		    <div id="HomeFirstRowContainer">
 		      <div id="MostInterestingThingContainer" class="TopLineBox">
 		        <h5>MOST INTERSTING THING</h5>
-		        <h2>Issue Title</h2>
+		        <h2>Human Pictogram</h2>
 		        <div id="issueTextBox">
-		          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		          <p  lang="ko">관절과 모듈구조로 활용성을 높인 사람 픽토그램이다. 블랙&화이트컬러와 두꺼운 선을 가진 스타일이 특징이다. 아이소타입의 거장 'Otto Neurath'의 작업물에 영향을 받은 스타일이다. 결과물은 아이콘 공유 플랫폼인 'thenounproject'를 통해 공개했다.</p>
 		        </div>
 		        <div id="issuePhotoContainer" class="imgcontainer"></div>
 		      </div>
 
 		      <div class="TopLineBox" id="NewsContainer">
-		        <h5>NEWS</h5>
-		        <div id="newsfeedContainer">
-		        	<div class="NewsTextContainer"><p class="NewsText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
-		        	<p class="NewsTimeText">1m ago</p>
-		        	<div class="NewsThumbContainer imgcontainer"></div>
-		        </div>
-		        <div class="NewsContainerSeperateLine"></div>
-		        <div id="newsfeedContainer">
-		        	<div class="NewsThumbContainer imgcontainer"></div>
-		        	<div class="NewsTextContainer"><p class="NewsText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
-		        	<p class="NewsTimeText">1m ago</p>
-		        </div>
-		        <div class="NewsContainerSeperateLine"></div>
-		        <div id="newsfeedContainer">
-		        	<div class="NewsThumbContainer imgcontainer"></div>
-		        	<div class="NewsTextContainer"><p class="NewsText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
-		        	<p class="NewsTimeText">1m ago</p>
-		        </div>
-		        <div class="NewsContainerSeperateLine"></div>
-		        <div id="newsfeedContainer">
-		        	<div class="NewsThumbContainer imgcontainer"></div>
-		        	<div class="NewsTextContainer"><p class="NewsText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
-		        	<p class="NewsTimeText">1m ago</p>
-		        </div>
-		        <div class="NewsContainerSeperateLine"></div>
-		        <div id="newsfeedContainer">
-		        	<div class="NewsThumbContainer imgcontainer"></div>
-		        	<div class="NewsTextContainer"><p class="NewsText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
-		        	<p class="NewsTimeText">1m ago</p>
-		        </div>
+		        <h5>NEWS on TWITTER</h5>
+		        <div class="twitter-block">
+					<a class="twitter-timeline" data-width="100%" data-height="450" data-link-color="#000" data-theme="light" href="https://twitter.com/1mokang?ref_src=twsrc%5Etfw" data-chrome="noheader transparent nofooter nofooter noborders">Tweets by YourTwitterHandle
+					</a>
+				</div>
+				<script>
+					jQuery('.twitter-block').delegate('#twitter-widget-0','DOMSubtreeModified propertychange', function() {
+					//function call to override the base twitter styles
+					customizeTweetMedia();
+					});
+
+					var customizeTweetMedia = function() {
+
+					//overrides font styles and removes the profile picture and media from twitter feed
+					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-media').css('display', 'none');
+					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet').css('padding', '10px 10px 10px 0px');
+					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-Author').css('padding', '0px');
+					jQuery('.twitter-block').find('.twitter-timeline').contents().find('img.Avatar').css('display', 'none');
+					jQuery('.twitter-block').find('.twitter-timeline').contents().find('span.TweetAuthor-avatar.Identity-avatar').remove();
+					jQuery('.twitter-block').find('.twitter-timeline').contents().find('span.TweetAuthor-screenName').css('font-size', '10px');
+					jQuery('.twitter-block').find('.twitter-timeline').contents().find('span.TweetAuthor-screenName').css('font-family', 'Roboto');
+
+					//also call the function on dynamic updates in addition to page load
+					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-TweetList').bind('DOMSubtreeModified propertychange', function() {
+					customizeTweetMedia(this);
+					});
+					}
+				</script>
+		        <!-- Original Twitter-timeline-->
+		        <!-- <a class="twitter-timeline" href="https://twitter.com/1mokang?ref_src=twsrc%5Etfw">Tweets by 1mokang</a> -->
+		        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		      </div>
 		    </div>  
 		<!-- SECOND ROW -->
@@ -199,17 +203,25 @@
     	<!-- FOURTH ROW -->
 		    <div id="HomeFourthRow">
 		  		<div id="RecentWorksContainer" class="TopLineBox">
-		      		<h5>INTERESTS & LIKES</h5>
+		      		<h5>INTERESTS on INSTAGRAM</h5>
 		  		</div>
-		  		<div id="InterestsContainer">
+		  		<!-- <div id="InterestsContainer">
 			    	<div class="imgcontainer InterestsModule"><img class="InterestsImg" src="img/test.png" ></div>
 			    	<div class="imgcontainer InterestsModule"></div>
 			    	<div class="imgcontainer InterestsModule"></div>
 			    	<div class="imgcontainer InterestsModule"></div>
 			    	<div class="imgcontainer InterestsModule"></div>
 			    	<div class="imgcontainer InterestsModule"></div>
-		    	</div>
+		    	</div> -->
+		    	<div id="sb_instagram" class="sbi sbi_col_6" style="width:100%; padding-bottom: 10px;" data-id="1978934319" data-num="12" data-res="high" data-cols="6" data-options='{&quot;sortby&quot;: &quot;none&quot;, &quot;headercolor&quot;: &quot;&quot;, &quot;imagepadding&quot;: &quot;5&quot;}'>
+					<div class="sb_instagram_header" style="padding: 10px; padding-bottom: 0; display: none"></div>
+					<div id="sbi_images" style="padding: 5px;"><div class="sbi_loader fa-spin"></div></div>
+					<div id="sbi_load"></div>
+				</div>
+				<script type="text/javascript">var sb_instagram_js_options = {"sb_instagram_at":"1978934319.1bf5d43.052905d0bb58451cb5e5cd1473f597ba"};</script>
+				<script type='text/javascript' src='/marine/js/sb-instagram.min.js?ver=1.4.8'></script>
 		    </div>
+		    
 		<!-- FOOTER -->
 		    <div id="Footer" class="TopLineBox">
 		    	<p id="FooterText">Copyright 2018 Wonmo Kang<br>1motime90@gmail.com</p>
@@ -220,6 +232,5 @@
 		    	<div class="snsThumb imgcontainer"></div><!-- behance -->
 		    </div>
 	</div>
-
 </body>
 </html>

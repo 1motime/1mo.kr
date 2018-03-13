@@ -10,3 +10,7 @@ $('selector').loupe({
   height: 150, // height of magnifier
   loupe: 'loupe' // css class for magnifier
 });
+
+
+
+
