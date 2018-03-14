@@ -7,11 +7,9 @@ jQuery('.twitter-block').delegate('#twitter-widget-0','DOMSubtreeModified proper
 
 					//overrides font styles and removes the profile picture and media from twitter feed
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-media').css('display', 'none');
-					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-TweetList').css('margin-top', '-8px');
-					
+					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-TweetList').css('margin-top', '-16px');
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet').css('padding', '16px 8px 16px 0px');
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet').css('border-bottom', '1px solid #E1E1E1');
-
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-retweetCredit').css('margin-left', '0px');
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-text').css('margin-left', '0px');
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-actions').css('margin-left', '0px');
@@ -19,7 +17,6 @@ jQuery('.twitter-block').delegate('#twitter-widget-0','DOMSubtreeModified proper
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-text').css('font-family', 'roboto');
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-text').css('font-family', 'roboto');
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.dt-updated').css('font-family', 'roboto');
-
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-text').css('font-weight', '300');
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-text').css('font-size', '14px');
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('img.Avatar').css('display', 'none');

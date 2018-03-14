@@ -337,8 +337,11 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     #NewsContainer{
       grid-column: 3 / 4;
       margin-bottom:70px;
-      height:510px;
-      overflow: hidden;      
+      height:auto; 
+    }
+    #twitterContainer{
+      height:452px;
+      overflow-y: scroll;
     }
       #newsfeedContainer{
         display:grid;
@@ -760,7 +763,9 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
       }
       #NewsContainer{
         grid-column: 1 / 2;
-        height:200px;
+      }
+      #twitterContainer{
+        height:150px;
       }
       .worksContainer{
         grid-template-columns: 1fr;
@@ -853,6 +858,12 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
         font-family: 'Roboto Slab', 'Noto Sans KR', sans-serif;
         font-weight: 100;
       }
+      h4 {
+        font-size:15px;
+      }
+/*      p{
+        font-size:14px;
+      }*/
       .WorksSubTitle{
         font-size:14px;
         /*letter-spacing: -0.8px;*/
