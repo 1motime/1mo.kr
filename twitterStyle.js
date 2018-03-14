@@ -18,11 +18,13 @@ jQuery('.twitter-block').delegate('#twitter-widget-0','DOMSubtreeModified proper
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-text').css('font-family', 'roboto');
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.dt-updated').css('font-family', 'roboto');
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-text').css('font-weight', '300');
-					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-text').css('font-size', '14px');
-					jQuery('.twitter-block').find('.twitter-timeline').contents().find('img.Avatar').css('display', 'none');
+					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-text').css('font-size', '13px');
+					jQuery('.twitter-block').find('.twitter-timeline').contents().find('img.Avatar').remove();
+					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.Icon--twitter').remove();
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('span.TweetAuthor-avatar.Identity-avatar').remove();
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('span.TweetAuthor-screenName').css('font-size', '10px');
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('span.TweetAuthor-screenName').css('font-family', 'Roboto');
+					
 					//also call the function on dynamic updates in addition to page load
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-TweetList').bind('DOMSubtreeModified propertychange', function() {
 					customizeTweetMedia(this);
