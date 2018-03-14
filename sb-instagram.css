@@ -80,7 +80,7 @@
 /* Photos */
 #sb_instagram .sbi_photo_wrap{
   position: relative;
-  border: 1px solid #999;
+  border: 1px solid #E1E1E1;
 }
 #sb_instagram .sbi_photo{
   display: block;

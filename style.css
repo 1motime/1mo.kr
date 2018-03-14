@@ -99,6 +99,11 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     padding:0px 0px 6px 0px;
     color: #212121;
   }
+  h4:lang(ko) {
+    font-size:15px;
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+  }
   h5 {
     font-size:14px;
     display:block;
@@ -363,11 +368,18 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
         }
         .NewsTimeText{}
       
-  #HomeSecondRow, #HomeThirdRow, #HomeFourthRow, #Footer{
+  #HomeSecondRow, #HomeThirdRow, #Footer{
     margin:0px 8px;
     padding-bottom:70px;
   }
     #RecentWorksContainer{
+
+    }
+    #instagramHeader{
+      margin:0px 8px;
+    }
+    #instagramBody{
+      padding-bottom:70px;
     }
     .worksContainer{
         display: grid;
@@ -730,7 +742,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
         grid-template-columns: 1fr 1fr 1fr;
       }      
   }
-  @media (max-width:650px){
+  @media (max-width:640px){
       #navBtnContainer{
         display:block;     
       }    
