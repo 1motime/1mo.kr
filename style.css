@@ -1,7 +1,9 @@
 /*BOX PREVIEW*/
-/*  div{
+  /*div{
     border:1px solid tomato;
   }*/
+
+
 /*twitter timeline*/
 blockquote.twitter-tweet {
   display: inline-block;
@@ -59,6 +61,16 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     .navielementMobile{
     }
 /*TYPOGRAPHY*/
+  a:link, a:visited{
+    color: #444444;
+  }
+  a:hover{
+    font-weight: 500;
+  }
+  a { text-decoration:none }
+  *{
+    box-sizing:border-box;
+  }
   h1 {
     font-size:50px;
     text-align: left;
@@ -201,6 +213,16 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
       color: #404040;
       font-weight:500;
     }
+    .Category{
+      list-style-type: none;
+      font-family:'Roboto', 'Noto Sans KR', sans-serif;
+      font-size:12px;
+      line-height: 18px;
+      font-weight: 500;
+      margin-bottom:16px;
+      color: #404040;
+      font-weight:500;
+    }
     .InformationTextDetails{
       font-family:'Roboto', 'Noto Sans KR', sans-serif;     
       /*font-size:12px; */
@@ -212,6 +234,9 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
       font-weight: 300;
       word-break:break-all;
 
+    }
+    .linkURL{
+      font-style: italic;
     }  
 /*NAVIGATION*/
   #navigationContainer{
@@ -265,21 +290,12 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
   .navielement {
     height: 27px;
     padding: 0px 2px;
+    color: black;
   }
 /*COMMON*/
   u { 
     text-decoration: none;
     border-bottom: 1px solid #E1E1E1;
-  }
-  a:link, a:visited{
-    color:black;
-  }
-  a:hover{
-    font-weight: 500;
-  }
-  a { text-decoration:none }
-  *{
-    box-sizing:border-box;
   }
   body {
     background-color: #F8F8F8;  
@@ -308,6 +324,14 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     font-weight:500;
   }
 /*HOME*/
+  #scrollBtn{
+    height:24px;
+    font-style:normal;
+    padding-top:10px;
+  }
+  #scrollSVG{
+    height:70%;
+  }
   #variableMessageSign {
     margin: 0px 8px 0px 8px;
     padding-bottom:56px;
@@ -332,7 +356,13 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
         height: 84px;
       }
       #issuePhotoContainer{
+        width:100%;
+        /*height: 306px;*/
+      }
+      .ContentsImgIssuePhoto{
         height: 306px;
+        position: relative; 
+        overflow: hidden;
       }
     #NewsContainer{
       grid-column: 3 / 4;
@@ -342,7 +372,10 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     #twitterContainer{
       height:452px;
       overflow-y: scroll;
+      border-top:1px solid #E1E1E1;
+      border-bottom:1px solid #E1E1E1;
     }
+
       #newsfeedContainer{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -549,9 +582,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     margin-bottom: 12px;    
   }
   .PortfolioImgModule{
-    position: relative; 
-    padding-top: 56.25%; /* 1:1 ratio */ 
-    overflow: hidden; 
+width:100%;
     margin-bottom: 12px;
   }
   .PortfolioImg{
@@ -649,10 +680,33 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     /*4-columns 2row*/
     grid-column: 9/13;
   }
+  .ContentsImgC-1Wrapper{
+   grid-column: 1/4; 
+  }
+  .ContentsImgC-1Wrapper{
+   grid-column: 1/3; 
+  }
+  .ContentsImgC-2Wrapper{
+   grid-column: 3/5; 
+  }
+  .ContentsImgC-3Wrapper{
+   grid-column: 5/7; 
+  }
+  .ContentsImgC-4Wrapper{
+   grid-column: 7/9; 
+  }
+
   .ContentsImgA{
     /* 16:9 ratio */ 
     position: relative; 
     padding-top: 56.25%;
+    overflow: hidden;
+  }
+
+  .ContentsImgP{
+    /* 16:9 ratio */ 
+    position: relative; 
+    padding-top: 178%;
     overflow: hidden;
   }
   .ContentsImgB{
@@ -746,6 +800,11 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
       }      
   }
   @media (max-width:640px){
+      #PortfolioContainer{
+
+        grid-template-columns: 1fr 1fr;
+
+      }
       #navBtnContainer{
         display:block;     
       }    

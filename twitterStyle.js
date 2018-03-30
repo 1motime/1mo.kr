@@ -7,7 +7,10 @@ jQuery('.twitter-block').delegate('#twitter-widget-0','DOMSubtreeModified proper
 
 					//overrides font styles and removes the profile picture and media from twitter feed
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-media').css('display', 'none');
-					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-TweetList').css('margin-top', '-16px');
+					// jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-TweetList').css('margin-top', '-16px');
+
+					
+					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-metadata').css('margin-top', '-2px');
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet').css('padding', '16px 8px 16px 0px');
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet').css('border-bottom', '1px solid #E1E1E1');
 					jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-Tweet-retweetCredit').css('margin-left', '0px');
