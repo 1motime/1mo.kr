@@ -1,5 +1,5 @@
 /*BOX PREVIEW*/
-  /*div{
+/*  div{
     border:1px solid tomato;
   }*/
 
@@ -62,7 +62,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     }
 /*TYPOGRAPHY*/
   a:link, a:visited{
-    color: #444444;
+    /*color: #444444;*/
   }
   a:hover{
     font-weight: 500;
@@ -183,9 +183,18 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     font-family: 'Roboto Slab', serif;
     font-weight: 100;
   }
+/*  .ManifestoTextKor{
+    font-size:22px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 16px;
+    font-weight:100;
+  }*/
   .ManifestoBold{
     font-weight: 300;
   }
+/*  .ManifestoKorBold{
+    font-weight: 400;
+  }*/
   .NewsTimeText{
     font-size:12px;
     line-height: 19px;
@@ -242,8 +251,13 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     }  
 /*NAVIGATION*/
   #navigationContainer{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+
+/*    display: flex;
+    flex-direction: row;*/
     margin:50px 8px 38px 8px;
     font-size:14px;
     font-family: 'Roboto', sans-serif;
@@ -266,7 +280,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     position:absolute;
     z-index: 999;
     right:16px;
-    top:32px;
+    top:52px;
     /*float:right;*/
   }  
 
@@ -279,15 +293,17 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     justify-content: space-between;
   }
   #naviLeft {
-    display:flex;
+    grid-column: 1 / 2;
+/*    display:flex;
     flex-direction: row-reverse;
     padding-right:50px;
     justify-content: space-between;
-    width:400px;
+    width:400px;*/
   }
   #naviRight {
-    width:544px;
-    padding-left: 16px;
+    grid-column: 3 / 4;
+/*    width:304px;
+    padding-left: 16px;*/
   }
   .navielement {
     height: 27px;
@@ -481,13 +497,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     max-height: 100%; 
     height: auto;
   }
-  .snsThumb{
-    float: right;
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    margin: 4px 0px 0px 16px;
-  }
+
 /*ABOUT*/
   #MessageRow{
     margin:0px 8px 70px 8px;
@@ -495,6 +505,9 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .MessageRowText{
+        margin-top: 8px;
+      }
   #AboutImgContainer{
     margin:0px 8px 30px 8px;
     /*padding-bottom:70px;*/
@@ -756,6 +769,47 @@ width:100%;
     -ms-transform: translate(-50%,-50%); 
     transform: translate(-50%,-50%);
   }
+
+
+/*FOOTER*/
+/*  .snsThumb{
+    float: right;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 4px 0px 0px 16px;
+  }*/
+  .fa {
+    float: right;
+    display: inline-block;
+    padding: 8px;
+    font-size: 32px;
+    width: 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 0px 0px 16px;
+    /*border-radius: 50%;*/
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    background: white;
+    color: #444444;
+  }
+  .fa-instagram {
+    background: white;
+    color: #444444;
+  }
+  .fa-behance {
+    background: white;
+    color: #444444;
+  }
+  .fa-twitter {
+    background: white;
+    color: #444444;
+  }
+
 /*RESPONSIVE*/
   @media (max-width:960px){
     .artboard{
@@ -765,6 +819,14 @@ width:100%;
       margin:0px 10% 18px 0px;
     }
   @media (max-width:900px){
+    #navigationContainer{
+      grid-template-columns: 1fr 1fr;
+    }
+    #naviRight {
+      grid-column: 2 / 3;
+  /*    width:304px;
+      padding-left: 16px;*/
+    }
     .artboard{
       width: 100%;
     }
@@ -793,7 +855,6 @@ width:100%;
       }
   }
   @media (max-width:800px){
-
       h1{
         font-size: 40px;
       }
@@ -879,10 +940,11 @@ width:100%;
       }
       #MessageRow{
         grid-template-columns: 1fr;
+        grid-row-gap: 32px;
       }
-      .MessageRowText{
-        margin-bottom: 24px;
-      }
+/*      .MessageRowText{
+        margin-bottom: 16px;
+      }*/
       #InterestsContainer{
         grid-template-columns: 1fr 1fr 1fr;
       }   
@@ -891,7 +953,9 @@ width:100%;
       }
 
   @media (max-width:415px){
-
+      #menuBtn{
+        top:32px;
+      }  
       #navigationContainer{
         margin:32px 8px 24px 8px;
       }
@@ -904,7 +968,7 @@ width:100%;
       #FooterText{
         display: block;
       }
-      .snsThumb{
+      .fa{
         float: left;
         margin: 24px 16px 0px 0px;
       }      
