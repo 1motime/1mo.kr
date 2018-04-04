@@ -62,7 +62,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     }
 /*TYPOGRAPHY*/
   a:link, a:visited{
-    /*color: #444444;*/
+    color: #444444;
   }
   a:hover{
     font-weight: 500;
