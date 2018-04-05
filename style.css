@@ -525,7 +525,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     max-height: 100%; 
     height: auto;
   }
-  #AboutFirstRow, #AboutSecondRow, #AboutThirdRow, #AboutFourthRow{
+  #AboutFirstRow, #AboutSecondRow, #AboutThirdRow, #AboutFourthRow, #AboutAddRow{
     margin:0 8px;
     padding-bottom:70px;
   }
@@ -548,7 +548,14 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
   #ConcernContainer{
     display: grid;
     justify-content: space-between;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+    height: auto;
+  }
+  #ToolsContainer{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 16px;
     height: auto;
   }
